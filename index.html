@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Javascript | Fetch API</title>
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.card {
+    border: 1px solid gray;
+    padding: 16px;
+    max-width: 200px;
+    min-width: 240px;
+    border-radius: 20px;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn-label {
+    padding: 12px 24px ;
+    gap: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-label:hover {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.btn-label:active {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+nav {
+    position: fixed;
+    top: 100px;
+}
+
+.active {
+    background-color: yellow;
+    border: 1px solid black;
+}
+</style>
+<body>
+    <h1>TOKO FIKTIF ONLINE</h1>
+    <nav>
+        <button class="btn-label active" data-category="all">Semua</button>
+        <button class="btn-label" data-category="men's clothing">Men's Clothing</button>
+        <button class="btn-label" data-category="jewelery">Jewelery</button>
+        <button class="btn-label" data-category="electronics">Electronic</button>
+    </nav>
+    <div class="products-list"></div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
